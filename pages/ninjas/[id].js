@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export const getStaticPaths = async () => {
   const res = await fetch('http://jsonplaceholder.typicode.com/users')
   const data = await res.json()
@@ -17,6 +19,7 @@ const Details = ({ ninja }) => {
     <div>
       <h1>{ninja.name}</h1>
       <p>{ninja.email}</p>
+      <Link href='/ninjas'><a>Back to ninja list</a></Link>
     </div>
   );
 }
