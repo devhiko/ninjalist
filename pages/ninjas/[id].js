@@ -19,7 +19,7 @@ const Details = ({ ninja }) => {
     <div>
       <h1>{ninja.name}</h1>
       <p>{ninja.email}</p>
-      <Link href='/ninjas'><a>Back to ninja list</a></Link>
+      <Link href='/ninjas'><a style={{ color: 'red' }}>Back to ninja list</a></Link>
     </div>
   );
 }
